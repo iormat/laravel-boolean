@@ -1,4 +1,6 @@
 @extends('layouts.main-layout')
 @section('content')
-    contenuto di prova
+    @auth
+        sei loggato
+    @endauth
 @endsection
