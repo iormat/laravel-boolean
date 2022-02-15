@@ -22,6 +22,13 @@ Route::post('/register', 'Auth\RegisterController@register');
 Route::post('/login', 'Auth\LoginController@login');
 Route::get('/logout', 'Auth\LoginController@logout');
 
+// auth only routes
+    //api routes
+Route::prefix('/api/postcards') -> group(function () {
+    Route::get('/get', 'ApiController@getPostcards') -> name('api.postcards.get');
+});
+
+Route::get('/postcard/create', 'HomeController@createPostcard') -> name('create');
 
 
 
