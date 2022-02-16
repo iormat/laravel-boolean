@@ -10976,6 +10976,10 @@ header button a:hover {
   color: #fff;
 }
 
+header a {
+  color: inherit;
+}
+
 .create {
   text-align: center;
 }

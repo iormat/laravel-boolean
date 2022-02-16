@@ -1924,6 +1924,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1939,7 +1940,6 @@ __webpack_require__.r(__webpack_exports__);
     })["catch"](function (err) {
       return console.error(err);
     });
-    console.log('Component mounted.');
   }
 });
 
@@ -37543,6 +37543,15 @@ var render = function () {
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
+              postcard.image
+                ? _c("img", {
+                    attrs: {
+                      src: "/storage/assets/img/postcards/" + postcard.image,
+                      alt: postcard.title,
+                    },
+                  })
+                : _vm._e(),
+              _vm._v(" "),
               _c("p", [_vm._v(_vm._s(postcard.text))]),
             ]),
           ])

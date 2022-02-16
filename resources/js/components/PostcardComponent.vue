@@ -6,6 +6,7 @@
                     <div class="card-header">{{postcard.sender}}</div>
 
                     <div class="card-body">
+                        <img v-if="postcard.image" :src="'/storage/assets/img/postcards/' + postcard.image" :alt="postcard.title">
                         <p>{{postcard.text}}</p>
                     </div>
                 </div>
@@ -28,8 +29,6 @@
                     this.postcards = r.data
                 }))
                 .catch(err => console.error(err))
-
-            console.log('Component mounted.')
         }
     }
 </script>

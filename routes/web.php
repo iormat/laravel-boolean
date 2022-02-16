@@ -29,6 +29,7 @@ Route::prefix('/api/postcards') -> group(function () {
 });
 
 Route::get('/postcard/create', 'HomeController@createPostcard') -> name('create');
+Route::post('/postcard/store', 'HomeController@storePostcard') -> name('store');
 
 
 
